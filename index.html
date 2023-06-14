@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список студентов</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer type="module" src="js/main.js"></script>
+</head>
+
+<body>
+  <section class="main">
+    <div class="container">
+      <h1 class="title">Список студентов</h1>
+      <form class="form" action="" id="add-student">
+        <label class="label">
+          <input class="inp inp-text" type="text" name="name" id="input-name" placeholder="Имя">
+        </label>
+        <label class="label">
+          <input class="inp inp-text" type="text" name="surname" id="input-surname" placeholder="Фамилия">
+        </label>
+        <label class="label">
+          <input class="inp inp-text" type="text" name="patronymic" id="input-patronymic" placeholder="Отчество">
+        </label>
+        <label class="label">
+          <input class="inp inp-birthday" type="date" name="birthday" id="input-birthday">
+        </label>
+        <label class="label">
+          <input class="inp inp-study" type="number" name="yearOfStudy" id="input-yearOfStudy"
+            placeholder="Год зачисления">
+        </label>
+        <label class="label">
+          <input class="inp inp-text" type="text" name="faculty" id="input-faculty" placeholder="Факультет">
+        </label>
+        <button class="btn">Добавить</button>
+      </form>
+        <p class="spn">фильтровать по:</p>
+        <form action="" class="filter-form" id="filter-form">
+          <input class="filter-inp" type="text" name="fio-filter" id="fio-filter" placeholder="ФИО">
+          <input class="filter-inp" type="text" name="yearOfStudy-filter" id="yearOfStudy-filter"
+            placeholder="дате начала обучения">
+          <input class="filter-inp" type="text" name="yearOfEndStudy-filter" id="yearOfEndStudy-filter"
+            placeholder="дате окончания обучения">
+          <input class="filter-inp" type="text" name="faculty-filter" id="faculty-filter" placeholder="факультету">
+        </form>
+      <table class="table">
+        <thead>
+          <th data-column="fio">ФИО</th>
+          <th data-column="birthday">Дата рождения</th>
+          <th data-column="yearOfStudy">Годы обучения</th>
+          <th data-column="faculty">Факультет</th>
+        </thead>
+        <tbody id="students-list">
+        </tbody>
+      </table>
+    </div>
+  </section>
+</body>
+
+</html>

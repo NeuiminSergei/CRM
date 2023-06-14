@@ -1,0 +1,140 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  color: #CFCFCF;
+  background-color: #222;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.main {
+  padding: 20px 0;
+}
+
+.title {
+  color: #fff;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.label {
+  width: 50%;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.inp {
+  width: 100%;
+  padding: 12px 10px;
+  border: 1px solid transparent;
+  background: #363636;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.inp::placeholder {
+  font-weight: 100;
+  color: #CFCFCF;
+}
+
+.inp:focus {
+  outline: #00B285 1px solid;
+}
+
+.btn {
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #00B285;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 0px;
+}
+
+th {
+  background-color: #222;
+  font-size: 19px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+td {
+  text-align: center;
+  padding: 15px 0;
+}
+
+tr {
+  background-color: #424242;
+}
+
+tr:nth-child(2n) {
+  background-color: #2C2C2C;
+}
+
+.error .inp {
+  border-color: red;
+}
+
+.error-block {
+  color: red;
+  position: absolute;
+  top: -18px;
+  font-size: 15px;
+}
+
+.filter-inp {
+  padding: 5px 10px;
+  background-color: #363636;
+  border: transparent;
+  border-radius: 3px;
+  outline: none;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.filter-inp::placeholder {
+  font-weight: 100;
+}
+
+.spn {
+  margin-bottom: 5px;
+}
+
+.filter-inp:focus {
+  outline: #00B285 1px solid;
+}
+
+.filter-form {
+  margin-bottom: 10px;
+}
